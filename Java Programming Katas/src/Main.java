@@ -27,10 +27,17 @@ int num , sum=0;
         int hasThreeTotal = 0;
         System.out.println("Enter the two integer values : ");
 
+        Scanner first = new Scanner (System.in);
+        num1 = first.nextInt();
+
+        Scanner sec = new Scanner (System.in);
+        num2 = sec.nextInt();
+
         hasThreeTotal = num1 + num2;
 
-        if(num1 == 3 || num2 == 3 && hasThreeTotal.Contains(3) )
-            return true ? false;
+        return
+        (num1 == 3 || num2 == 3 && hasThreeTotal.Contains(3) ) ?
+             true : false;
 
     }
 }
