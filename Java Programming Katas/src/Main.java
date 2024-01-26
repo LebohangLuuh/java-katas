@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public abstract class Main {
     public static void main(String[] args) {
-int num = 0 , sum=0;
+int num , sum=0;
 
         System.out.println("please enter a number : ");
 
-        Scanner in = new System(num);
+        Scanner input = new Scanner (System.in);
+        num = input.nextInt();
 
         for (int i = 0; i < num; i++)
         {
